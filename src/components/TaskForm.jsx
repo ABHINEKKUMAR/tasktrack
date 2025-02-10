@@ -1,16 +1,21 @@
 import React from 'react'
+import "./TaskForm.css"
 
 const TaskForm= () => {
     return (
         <header className='app_header'>Header Section
         <form>
-           <input type ="text" className="task_input"
-           placeholder='Enter your task'/>
+           <input type ="text" 
+           className="task_input"
+           placeholder='Enter your task'
+           />
            <div className =" task_form_bottom_line">
-            <button className='tag'>HTMl</button>
-            <button className='tag'>CSS</button>
-            <button className='tag'>JavaScript</button>
-            <button className='tag'>React</button>
+            <div>
+                <Tag tagName='HTML' />
+                <Tag tagName='CSS' />
+                <Tag tagName='JavaScript' />
+                <Tag tagName='React' />
+            </div>
 
             <select className ='task_status'>
                 <option value ="todo">To Do</option>
